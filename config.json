@@ -1,6 +1,6 @@
 {
   "name": "n8n Hass",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "slug": "hass-n8n",
   "description": "Self host your n8n instance",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -9,7 +9,7 @@
   "icon": "ico.png",
   "logo": "ico.png",
   "webui": "[PROTO:protocol]://[HOST]:[PORT:5678]/",
-  "map": ["ssl"],
+  "map": ["ssl", "share:rw"],
   "apparmor": true,
   "ports": {
     "5678/tcp": 5678

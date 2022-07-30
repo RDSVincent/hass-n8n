@@ -32,9 +32,12 @@ ENTRYPOINT ["sh", "/tmp/docker-entrypoint.sh"]
 
 EXPOSE 5678/tcp
 
-
 RUN apk add --update python3 py3-pip
 
 RUN pip3 install -U pip setuptools
 
 RUN pip3 install requests
+
+RUN apk add --update gcc libc-dev python3-dev libffi-dev
+
+RUN pip3 install myfitnesspal

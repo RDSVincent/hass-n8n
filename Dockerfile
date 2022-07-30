@@ -42,4 +42,4 @@ RUN apk add --update gcc libc-dev python3-dev libffi-dev
 
 RUN pip3 install myfitnesspal
 
-RUN pip3 mysql-connector-python
+RUN pip3 install mysql-connector-python

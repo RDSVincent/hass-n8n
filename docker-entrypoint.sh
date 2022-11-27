@@ -44,8 +44,8 @@ chown -R node /home/node
 
 if [ "$#" -gt 0 ]; then
   # Got started with arguments
-  exec su-exec node "$@"
+  exec su-exec n8n start "$@"
 else
   # Got started without arguments
-  exec su-exec node n8n
+  exec su-exec n8n start
 fi
